@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - ONG Amigo Fiel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a class="nav-brand" href="index.html">ONG Amigo Fiel</a>
+            <button class="nav-toggler" type="button" id="navToggler">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active" href="projetos.html">Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#lista-projetos">Nossos Projetos</a></li>
+                        <li><a class="dropdown-item" href="#voluntariado">Voluntariado</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="lista-projetos">
+            <h1 class="text-center">Nossos Projetos</h1>
+            <div class="grid-row">
+                <div class="col-md-4">
+                    <article class="card">
+                        <img src="img/gatinho-resgatado.png" class="card-img-top" alt="Animal sendo resgatado por um voluntário">
+                        <div class="card-body">
+                            <h2 class="card-title">Resgate e Reabilitação<span class="badge badge-primary">Urgente</span></h2>
+                            <p>Atuamos no resgate de animais em perigo e oferecemos tratamento veterinário completo e reabilitação comportamental.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card">
+                        <img src="img/feira-de-adocao.png" class="card-img-top" alt="Família feliz adotando um cachorro em feira">
+                        <div class="card-body">
+                            <h2 class="card-title">Feiras de Adoção<span class="badge badge-secondary">Regular</span></h2>
+                            <p>Promovemos eventos regulares de adoção responsável para encontrar lares permanentes para nossos animais resgatados.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card">
+                        <img src="img/cirurgia.png" class="card-img-top" alt="Veterinário realizando cirurgia de castração">
+                        <div class="card-body">
+                            <h2 class="card-title">Castração Solidária</h2>
+                            <p>Organizamos mutirões de castração a baixo custo para controlar a população de animais de rua e prevenir doenças.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr style="margin: var(--space-5) 0; border: 0; border-top: 1px solid var(--color-border);">
+
+        <section id="voluntariado">
+            <div class="grid-row" style="align-items: center;">
+                <div class="col-md-6">
+                    <img src="img/voluntarios-passeando.png" alt="Voluntários passeando com cães do abrigo" style="border-radius: var(--border-radius);">
+                </div>
+                <div class="col-md-6">
+                    <h2>Seja um Voluntário</h2>
+                    <p class="lead">Seu tempo e carinho podem mudar a vida de um animal. Precisamos de ajuda no abrigo, em feiras de adoção e lares temporários.</p>
+                    <p>Buscamos pessoas comprometidas para passear, limpar, socializar os animais e auxiliar em eventos e na administração.</p>
+                    <a href="cadastro.html" class="btn btn-primary btn-lg">Quero ser Voluntário</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="doacao" class="section-bg">
+            <div class="grid-row" style="align-items: center;">
+                <div class="col-md-8">
+                    <h2>Como Doar</h2>
+                    <p class="lead">Sua contribuição financeira é essencial para comprarmos ração, medicamentos e mantermos o abrigo funcionando.</p>
+                    <p>Você pode doar através de PIX, cartão de crédito ou apadrinhar um animal específico. Sua doação salva vidas.</p>
+                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#donationModal">Fazer uma Doação Agora</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="img/cofrinho.png" alt="Ilustração de um cofrinho" style="border-radius: 50%; max-width: 200px; margin: auto;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ONG Amigo Fiel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="donationModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Obrigado por Doar!</h3>
+                    <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Sua generosidade faz a diferença. Selecione um método de doação:</p>
+                    <p><strong>PIX:</strong> contato@ongamigofiel.org</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
